@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
+import { ReferralBanner } from '@/components/ReferralBanner';
 
 export const metadata = {
   title: 'How to Convert JSON to TypeScript Interfaces Automatically',
@@ -19,7 +20,7 @@ export default function BlogPost1() {
       </nav>
 
       <header className="mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold mb-4 border border-brand-200">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold mb-4 border border-blue-200">
           TypeScript Architecture
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -57,7 +58,7 @@ interface UserApiResponse {
 
         <h2 className="text-xl font-bold text-slate-900 pt-4">Automating Conversion with DevTools Lab</h2>
         <p>
-          With our client-side <Link href="/tools/json-to-typescript" className="text-brand-600 font-semibold underline">JSON to TypeScript Converter</Link>, you can paste your raw response directly and generate recursive PascalCase interfaces within milliseconds.
+          With our client-side <Link href="/tools/json-to-typescript" className="text-blue-600 font-semibold underline">JSON to TypeScript Converter</Link>, you can paste your raw response directly and generate recursive PascalCase interfaces within milliseconds.
         </p>
 
         <h2 className="text-xl font-bold text-slate-900 pt-4">Best Practices for Type Architecture</h2>
@@ -68,12 +69,14 @@ interface UserApiResponse {
         </ol>
       </div>
 
-      <div className="mt-12 p-6 bg-brand-50 rounded-2xl border border-brand-200 flex items-center justify-between">
+      <ReferralBanner variant="full" />
+
+      <div className="mt-10 p-6 bg-blue-50 rounded-2xl border border-blue-200 flex items-center justify-between">
         <div>
-          <h3 className="font-bold text-brand-950 text-base">Try the Generator Now</h3>
-          <p className="text-xs text-brand-800 mt-1">Convert JSON to TypeScript, Go Structs, or Python classes instantly.</p>
+          <h3 className="font-bold text-slate-900 text-base">Try the Generator Now</h3>
+          <p className="text-xs text-slate-600 mt-1">Convert JSON to TypeScript, Go Structs, or Python classes instantly.</p>
         </div>
-        <Link href="/tools/json-to-typescript" className="px-4 py-2 bg-brand-600 text-white rounded-xl text-xs font-bold hover:bg-brand-700 transition-colors shadow-sm">
+        <Link href="/tools/json-to-typescript" className="px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition-colors shadow-sm">
           Open Converter &rarr;
         </Link>
       </div>

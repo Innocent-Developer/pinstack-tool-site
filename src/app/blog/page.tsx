@@ -1,14 +1,47 @@
 import React from 'react';
 import Link from 'next/link';
 import { AdPlaceholder } from '@/components/AdPlaceholder';
+import { ReferralBanner } from '@/components/ReferralBanner';
 import { siteConfig } from '@/lib/siteConfig';
 
 export const metadata = {
   title: 'Engineering Blog & Technical Guides',
-  description: 'Deep-dives into TypeScript data modeling, SQL query formatting, JWT token security, regular expressions, and DevOps scheduling by Abubakkar Sajid and API Test Lab.',
+  description: 'Deep-dives into TypeScript data modeling, cURL generation, SQL formatting, JWT token security, regular expressions, and DevOps scheduling by Abubakkar Sajid and API Test Lab.',
 };
 
 const posts = [
+  {
+    slug: 'curl-command-to-python-requests-fetch-golang-guide',
+    title: 'How to Convert cURL Commands to Python, JavaScript Fetch & Golang Code',
+    description: 'Learn how to translate cURL requests into executable Python requests, JavaScript fetch, Node.js Axios, and Golang HTTP client code effortlessly.',
+    date: 'September 2026',
+    readTime: '7 min read',
+    category: 'API Engineering',
+  },
+  {
+    slug: 'sha256-md5-hmac-hashing-security-guide',
+    title: 'SHA-256, MD5 & HMAC Hashing: Developer Security & Best Practices',
+    description: 'Understand cryptographic hash functions, MD5 collision vulnerabilities, SHA-256 integrity verification, and HMAC secret signatures for API security.',
+    date: 'September 2026',
+    readTime: '8 min read',
+    category: 'Cryptography',
+  },
+  {
+    slug: 'json-diff-and-api-comparison-best-practices',
+    title: 'How to Compare JSON Responses & Spot API Breaking Changes Fast',
+    description: 'Master visual JSON comparison techniques to identify breaking API changes, missing keys, array mutations, and structural regressions across backend microservices.',
+    date: 'September 2026',
+    readTime: '6 min read',
+    category: 'API Testing',
+  },
+  {
+    slug: 'base64-encoding-decoding-url-safe-guide',
+    title: 'Base64 Encoding & URL-Safe Encoding: Complete Engineering Guide',
+    description: 'Master Base64 binary encoding, base64url padding rules, data URIs, basic auth headers, and web string handling across JavaScript, Python, and Go.',
+    date: 'September 2026',
+    readTime: '6 min read',
+    category: 'Data Encoding',
+  },
   {
     slug: 'how-to-convert-json-to-typescript-interfaces',
     title: 'How to Convert JSON to TypeScript Interfaces, Go Structs & Python Classes',
@@ -98,6 +131,8 @@ export default function BlogIndexPage() {
           </article>
         ))}
       </div>
+
+      <ReferralBanner variant="full" />
     </div>
   );
 }
