@@ -5,10 +5,10 @@ import { siteConfig } from '@/lib/siteConfig';
 
 export const PopunderAd: React.FC = () => {
   useEffect(() => {
-    // Inject Popunder script directly into document body on client mount
+    // 1. Inject official Adsterra Popunder script into head/body
     if (typeof document !== 'undefined') {
-      const existingScript = document.getElementById('adsterra-popunder-script');
-      if (!existingScript) {
+      const existing = document.getElementById('adsterra-popunder-script');
+      if (!existing) {
         const script = document.createElement('script');
         script.id = 'adsterra-popunder-script';
         script.type = 'text/javascript';
