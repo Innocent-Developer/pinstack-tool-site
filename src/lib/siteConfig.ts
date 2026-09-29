@@ -14,6 +14,8 @@ export const siteConfig = {
     smartlink: "https://www.profitableratecpmnetwork.com/bdhfar05d?key=c48ccc9234724b294e664f5c39eead9d",
     smartlinkId: "31464509",
     popunderScript: "https://pl31564810.profitableratecpmnetwork.com/77/79/4c/77794cb4dddab644ce18699f4f9f74d3.js",
+    referralLink: "https://beta.publishers.adsterra.com/referral/47h1n6zmet",
+    referralBanner: "https://landings-cdn.adsterratech.com/referralBanners/png/728%20x%2090%20px.png",
     units: {
       leaderboard728x90: {
         id: "31464313",

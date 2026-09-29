@@ -7,6 +7,49 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-950 text-slate-400 text-sm mt-20 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        {/* Adsterra Referral Invite Banner Section (Last on Web) */}
+        <div className="mb-12 p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-slate-800/80 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="flex-1 space-y-2 text-center lg:text-left">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[11px] font-bold border border-emerald-500/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Publisher Referral Program
+            </span>
+            <h3 className="text-white font-extrabold text-lg sm:text-xl tracking-tight">
+              Earn 5% Lifetime Revenue with Adsterra Network
+            </h3>
+            <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
+              Refer new publishers to Adsterra Network and earn 5% of their revenue lifetime! The more people you refer, the more income you get. High CPM rates & instant monetization.
+            </p>
+            <div className="pt-1">
+              <a
+                href={siteConfig.adsterra.referralLink}
+                target="_blank"
+                rel="nofollow"
+                className="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300 underline"
+              >
+                <span>Get your referral link on Adsterra</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="shrink-0 flex flex-col items-center gap-3 w-full lg:w-auto">
+            <a
+              href={siteConfig.adsterra.referralLink}
+              target="_blank"
+              rel="nofollow"
+              className="group relative block overflow-hidden rounded-2xl border border-slate-700/80 hover:border-emerald-500/60 transition-all duration-300 shadow-md hover:shadow-emerald-500/10"
+              title="Monetize Your Traffic Easily with Adsterra"
+            >
+              <img
+                src={siteConfig.adsterra.referralBanner}
+                alt="Adsterra Monetize Your Traffic Easily Banner"
+                className="max-w-full h-auto rounded-2xl group-hover:scale-[1.01] transition-transform duration-300"
+              />
+            </a>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           
           {/* Column 1: Brand & Philosophy */}
@@ -93,6 +136,17 @@ export const Footer: React.FC = () => {
                 <a href={siteConfig.authorUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
                   <span>Abubakkar Sajid (abubakkar.dev)</span>
                   <span className="text-slate-500">&rarr;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.adsterra.referralLink}
+                  target="_blank"
+                  rel="nofollow"
+                  className="hover:text-emerald-400 text-emerald-400/90 font-semibold transition-colors flex items-center gap-1"
+                >
+                  <span>Adsterra Partner (5% Earnings)</span>
+                  <span className="text-emerald-500 text-xs">&rarr;</span>
                 </a>
               </li>
             </ul>
