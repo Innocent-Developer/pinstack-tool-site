@@ -48,9 +48,11 @@ export const Header: React.FC = () => {
           {/* Logo & Brand */}
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-violet-600 flex items-center justify-center text-white text-lg shadow-sm group-hover:scale-105 transition-transform">
-                📌
-              </div>
+              <img
+                src="/logo.png"
+                alt="PinStack Logo"
+                className="w-9 h-9 rounded-xl object-contain shadow-xs group-hover:scale-105 transition-transform"
+              />
               <div className="flex flex-col">
                 <div className="flex items-center gap-1.5 leading-none">
                   <span className="font-extrabold text-slate-900 tracking-tight text-xl">

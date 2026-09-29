@@ -11,8 +11,12 @@ export const Footer: React.FC = () => {
           
           {/* Column 1: Brand & Philosophy */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2 text-white font-extrabold text-xl">
-              <span className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-sm">📌</span>
+            <div className="flex items-center space-x-2.5 text-white font-extrabold text-xl">
+              <img
+                src="/logo.png"
+                alt="PinStack Logo"
+                className="w-8 h-8 rounded-xl object-contain shadow-xs"
+              />
               <span>PinStack<span className="text-blue-500">.cc</span></span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
