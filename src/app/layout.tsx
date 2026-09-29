@@ -108,6 +108,11 @@ export default function RootLayout({
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsensePublisherId}`}
           crossOrigin="anonymous"
         ></script>
+        {/* Popunder Ad Unit */}
+        <script
+          type="text/javascript"
+          src="https://pl31564810.profitableratecpmnetwork.com/77/79/4c/77794cb4dddab644ce18699f4f9f74d3.js"
+        ></script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       </head>
