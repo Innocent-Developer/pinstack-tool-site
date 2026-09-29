@@ -11,7 +11,8 @@ export const siteConfig = {
   twitterHandle: "@pinstack_app",
   adsensePublisherId: "ca-pub-XXXXXXXXXXXXXXXX",
   adsterra: {
-    smartlink: "https://www.profitableratecpmnetwork.com/c9mn156fc?key=a88992711e2d455f53605af89082509f",
+    smartlink: "https://www.profitableratecpmnetwork.com/bdhfar05d?key=c48ccc9234724b294e664f5c39eead9d",
+    smartlinkId: "31464509",
     popunderScript: "https://pl31564810.profitableratecpmnetwork.com/77/79/4c/77794cb4dddab644ce18699f4f9f74d3.js",
     units: {
       leaderboard728x90: {
