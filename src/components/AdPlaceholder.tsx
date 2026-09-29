@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { siteConfig } from '@/lib/siteConfig';
 
 export type AdFormat = 'horizontal' | '728x90' | '300x250' | '320x50' | '160x600' | '160x300' | 'responsive' | 'rectangle' | 'vertical';
 
@@ -12,29 +13,29 @@ interface AdPlaceholderProps {
 
 const AD_CONFIGS: Record<string, { key: string; width: number; height: number }> = {
   '728x90': {
-    key: '0a00d6b56f9b8618fe81f5f63f235768',
-    width: 728,
-    height: 90,
+    key: siteConfig.adsterra.units.leaderboard728x90.key,
+    width: siteConfig.adsterra.units.leaderboard728x90.width,
+    height: siteConfig.adsterra.units.leaderboard728x90.height,
   },
   '320x50': {
-    key: 'f538953f8e3bbbaeaf159ea570774579',
-    width: 320,
-    height: 50,
+    key: siteConfig.adsterra.units.mobile320x50.key,
+    width: siteConfig.adsterra.units.mobile320x50.width,
+    height: siteConfig.adsterra.units.mobile320x50.height,
   },
   '300x250': {
-    key: '1dd1cf307abd2fa36b9e06a4b8095fb3',
-    width: 300,
-    height: 250,
+    key: siteConfig.adsterra.units.rectangle300x250.key,
+    width: siteConfig.adsterra.units.rectangle300x250.width,
+    height: siteConfig.adsterra.units.rectangle300x250.height,
   },
   '160x600': {
-    key: 'b9056214d244c9d2a46b58b4496d38da',
-    width: 160,
-    height: 600,
+    key: siteConfig.adsterra.units.skyscraper160x600.key,
+    width: siteConfig.adsterra.units.skyscraper160x600.width,
+    height: siteConfig.adsterra.units.skyscraper160x600.height,
   },
   '160x300': {
-    key: 'e3b0ce43f0bd3bf56b6c64a6eb70f532',
-    width: 160,
-    height: 300,
+    key: siteConfig.adsterra.units.vertical160x300.key,
+    width: siteConfig.adsterra.units.vertical160x300.width,
+    height: siteConfig.adsterra.units.vertical160x300.height,
   },
 };
 

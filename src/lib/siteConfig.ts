@@ -10,6 +10,42 @@ export const siteConfig = {
   ogImage: "https://pinstack.cc/og.png",
   twitterHandle: "@pinstack_app",
   adsensePublisherId: "ca-pub-XXXXXXXXXXXXXXXX",
+  adsterra: {
+    smartlink: "https://www.profitableratecpmnetwork.com/c9mn156fc?key=a88992711e2d455f53605af89082509f",
+    popunderScript: "https://pl31564810.profitableratecpmnetwork.com/77/79/4c/77794cb4dddab644ce18699f4f9f74d3.js",
+    units: {
+      leaderboard728x90: {
+        id: "31464313",
+        key: "0a00d6b56f9b8618fe81f5f63f235768",
+        width: 728,
+        height: 90,
+      },
+      mobile320x50: {
+        id: "31464315",
+        key: "f538953f8e3bbbaeaf159ea570774579",
+        width: 320,
+        height: 50,
+      },
+      rectangle300x250: {
+        id: "31464314",
+        key: "1dd1cf307abd2fa36b9e06a4b8095fb3",
+        width: 300,
+        height: 250,
+      },
+      skyscraper160x600: {
+        id: "31464317",
+        key: "b9056214d244c9d2a46b58b4496d38da",
+        width: 160,
+        height: 600,
+      },
+      vertical160x300: {
+        id: "31464316",
+        key: "e3b0ce43f0bd3bf56b6c64a6eb70f532",
+        width: 160,
+        height: 300,
+      },
+    },
+  },
   navItems: [
     { title: "All Tools", href: "/#tools" },
     { title: "JSON to Types", href: "/tools/json-to-typescript" },
