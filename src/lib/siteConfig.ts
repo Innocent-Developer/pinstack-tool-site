@@ -1,0 +1,26 @@
+export const siteConfig = {
+  name: "PinStack",
+  shortName: "PinStack",
+  tagline: "Your Daily Stack of Private Developer Utilities",
+  description: "PinStack is an ultra-fast, 100% client-side developer utility suite. Pin your daily developer tools for instant JSON to TypeScript conversion, cURL to code generation, SQL formatting, JWT debugging, Regex testing, and API response comparison with zero latency and complete privacy.",
+  url: "https://pinstack.cc",
+  parentUrl: "https://apitestlab.org",
+  authorName: "Abubakkar Sajid",
+  authorUrl: "https://abubakkar.dev",
+  ogImage: "https://pinstack.cc/og.png",
+  twitterHandle: "@pinstack_app",
+  adsensePublisherId: "ca-pub-XXXXXXXXXXXXXXXX",
+  navItems: [
+    { title: "All Tools", href: "/#tools" },
+    { title: "JSON to Types", href: "/tools/json-to-typescript" },
+    { title: "cURL to Code", href: "/tools/curl-to-code" },
+    { title: "SQL Formatter", href: "/tools/sql-formatter" },
+    { title: "JWT Debugger", href: "/tools/jwt-debugger" },
+    { title: "JSON Diff", href: "/tools/json-diff" },
+    { title: "Hash & HMAC", href: "/tools/hash-generator" },
+    { title: "Regex Tester", href: "/tools/regex-tester" },
+    { title: "Cron Generator", href: "/tools/cron-generator" },
+    { title: "Base64 & URL", href: "/tools/base64-encoder" },
+    { title: "Engineering Blog", href: "/blog" },
+  ]
+};
