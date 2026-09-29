@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/siteConfig';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { PopunderAd } from '@/components/PopunderAd';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -117,6 +118,7 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       </head>
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+        <PopunderAd />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
