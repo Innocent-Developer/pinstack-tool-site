@@ -1,6 +1,7 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { siteConfig } from '@/lib/siteConfig';
 
 export type AdFormat = 'horizontal' | '728x90' | '300x250' | '320x50' | '160x600' | '160x300' | 'responsive' | 'rectangle' | 'vertical';
@@ -113,17 +114,28 @@ export const AdPlaceholder: React.FC<AdPlaceholderProps> = ({
   );
 };
 
-// Pure HTML srcdoc Ad Frame ensuring document.write executes properly and renders images
+// Route-Aware & Reload-Fresh Ad Frame
 const AdFrame: React.FC<{ keyId: string; width: number; height: number }> = ({
   keyId,
   width,
   height,
 }) => {
+  const pathname = usePathname();
+  const [frameKey, setFrameKey] = useState(() => `${keyId}-${Math.random().toString(36).slice(2)}`);
+
+  useEffect(() => {
+    // Generate fresh key on route change or reload to force fresh iframe recreation
+    setFrameKey(`${keyId}-${pathname}-${Date.now()}-${Math.random().toString(36).slice(2)}`);
+  }, [pathname, keyId]);
+
   const adHtml = `<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
     <style>
       * { box-sizing: border-box; }
       html, body {
@@ -163,6 +175,7 @@ const AdFrame: React.FC<{ keyId: string; width: number; height: number }> = ({
       className="flex items-center justify-center overflow-hidden rounded-xl border border-slate-200/80 shadow-2xs bg-slate-50"
     >
       <iframe
+        key={frameKey}
         srcDoc={adHtml}
         width={width}
         height={height}
