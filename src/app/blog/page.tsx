@@ -11,6 +11,14 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'client-side-jwt-debugging-enterprise-security-guide',
+    title: 'Client-Side JWT Debugging & Token Inspection: Enterprise Security Standards for US, EU, and Gulf Teams',
+    description: 'Learn why senior engineers across the US, UK, Germany, UAE, and Saudi Arabia debug JSON Web Tokens offline using in-browser WebCrypto execution for SOC 2, GDPR, and UAE PDPL compliance.',
+    date: 'September 2026',
+    readTime: '9 min read',
+    category: 'JWT & Cryptography Architecture',
+  },
+  {
     slug: 'enterprise-api-security-zero-exposure-architecture',
     title: 'Enterprise API Security & Zero-Exposure Architecture: Why US, EU, and Gulf Engineering Teams Are Ditching Cloud Utilities',
     description: 'Discover why FinTech and enterprise engineering teams across the US, UK, Germany, UAE, and Saudi Arabia rely on zero-exposure client-side tools like PinStack for SOC 2, GDPR, and UAE PDPL compliance.',
