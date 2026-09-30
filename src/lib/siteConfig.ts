@@ -51,6 +51,7 @@ export const siteConfig = {
   },
   navItems: [
     { title: "All Tools", href: "/#tools" },
+    { title: "Dev Tools Hub", href: "/category/developer-tools" },
     { title: "JSON to Types", href: "/tools/json-to-typescript" },
     { title: "cURL to Code", href: "/tools/curl-to-code" },
     { title: "SQL Formatter", href: "/tools/sql-formatter" },

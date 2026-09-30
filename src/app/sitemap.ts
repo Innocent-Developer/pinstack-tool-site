@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const routes = [
     { path: '', priority: 1.0, freq: 'daily' as const },
+    { path: '/category/developer-tools', priority: 0.95, freq: 'daily' as const },
     { path: '/tools/json-to-typescript', priority: 0.95, freq: 'daily' as const },
     { path: '/tools/curl-to-code', priority: 0.95, freq: 'daily' as const },
     { path: '/tools/sql-formatter', priority: 0.95, freq: 'daily' as const },
