@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/tools/cron-generator', priority: 0.95, freq: 'daily' as const },
     { path: '/tools/base64-encoder', priority: 0.95, freq: 'daily' as const },
     { path: '/blog', priority: 0.85, freq: 'daily' as const },
+    { path: '/blog/enterprise-api-security-zero-exposure-architecture', priority: 0.90, freq: 'daily' as const },
     { path: '/blog/curl-command-to-python-requests-fetch-golang-guide', priority: 0.85, freq: 'weekly' as const },
     { path: '/blog/sha256-md5-hmac-hashing-security-guide', priority: 0.85, freq: 'weekly' as const },
     { path: '/blog/json-diff-and-api-comparison-best-practices', priority: 0.85, freq: 'weekly' as const },
