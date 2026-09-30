@@ -8,44 +8,30 @@ export const Footer: React.FC = () => {
     <footer className="bg-slate-950 text-slate-400 text-sm mt-20 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Adsterra Referral Invite Banner Section (Last on Web) */}
-        <div className="mb-12 p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-slate-800/80 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
-          <div className="flex-1 space-y-2 text-center lg:text-left">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[11px] font-bold border border-emerald-500/20">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-              Publisher Referral Program
-            </span>
-            <h3 className="text-white font-extrabold text-lg sm:text-xl tracking-tight">
-              Earn 5% Lifetime Revenue with Adsterra Network
-            </h3>
-            <p className="text-slate-400 text-xs leading-relaxed max-w-2xl">
-              Refer new publishers to Adsterra Network and earn 5% of their revenue lifetime! The more people you refer, the more income you get. High CPM rates & instant monetization.
-            </p>
-            <div className="pt-1">
-              <a
-                href={siteConfig.adsterra.referralLink}
-                target="_blank"
-                rel="nofollow"
-                className="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300 underline"
-              >
-                <span>Get your referral link on Adsterra</span>
-                <span>&rarr;</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="shrink-0 flex flex-col items-center gap-3 w-full lg:w-auto">
+        <div className="mb-12 flex flex-col items-center justify-center text-center">
+          <a
+            href={siteConfig.adsterra.referralLink}
+            target="_blank"
+            rel="nofollow"
+            className="group block overflow-hidden rounded-xl border border-slate-800 shadow-md hover:border-emerald-500/60 transition-all bg-slate-900"
+            title="Monetize Your Traffic Easily — Adsterra Publisher Network"
+          >
+            <img
+              src={siteConfig.adsterra.referralBanner}
+              alt="Monetize Your Traffic Easily — Adsterra Publisher Network"
+              className="w-[728px] max-w-full h-auto rounded-xl group-hover:scale-[1.01] transition-transform"
+            />
+          </a>
+          <div className="mt-2.5 flex flex-wrap items-center justify-center gap-2 text-[11px] text-slate-400 font-mono">
+            <span>Refer publishers to Adsterra Network & earn 5% lifetime revenue</span>
+            <span>•</span>
             <a
               href={siteConfig.adsterra.referralLink}
               target="_blank"
               rel="nofollow"
-              className="group relative block overflow-hidden rounded-2xl border border-slate-700/80 hover:border-emerald-500/60 transition-all duration-300 shadow-md hover:shadow-emerald-500/10"
-              title="Monetize Your Traffic Easily with Adsterra"
+              className="text-emerald-400 hover:underline font-bold"
             >
-              <img
-                src={siteConfig.adsterra.referralBanner}
-                alt="Adsterra Monetize Your Traffic Easily Banner"
-                className="max-w-full h-auto rounded-2xl group-hover:scale-[1.01] transition-transform duration-300"
-              />
+              Get Referral Link &rarr;
             </a>
           </div>
         </div>
