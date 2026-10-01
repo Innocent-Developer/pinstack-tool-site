@@ -9,7 +9,7 @@ export const siteConfig = {
   authorUrl: "https://abubakkar.dev",
   ogImage: "https://pinstack.cc/og.png",
   twitterHandle: "@pinstack_app",
-  adsensePublisherId: "ca-pub-XXXXXXXXXXXXXXXX",
+  adsensePublisherId: "ca-pub-6076284388585235",
   adsterra: {
     smartlink: "https://www.profitableratecpmnetwork.com/bdhfar05d?key=c48ccc9234724b294e664f5c39eead9d",
     smartlinkId: "31464509",
